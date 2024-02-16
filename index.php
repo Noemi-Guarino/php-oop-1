@@ -5,7 +5,18 @@ class Movie {
     public $title;
     public $genre;
     public $year;
+
+    // Costruttore
+    public function __construct($title, $genre, $year) {
+        $this->title = $title;
+        $this->genre = $genre;
+        $this->year = $year;
+    }
 }
+
+// Creazione di due oggetti Movie
+$movie1 = new Movie("Fight Club","Thriller", 1999);
+$movie2 = new Movie("Fuori di cresta SLC Punk!", "Commedia", 1998);
 ?>
 
 
